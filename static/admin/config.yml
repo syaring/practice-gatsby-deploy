@@ -21,10 +21,11 @@ collections:
 
   - name: "media"
     label: "Media"
-    folder: "src/media"
+    folder: "src/pages/media"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
+      #- {label: "Type", name: "type", widget: "hidden", default: "media"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Published Date", name: "date", widget: "datetime"}
       - {label: "Media Name", name: "mediaName", widget: "text"}

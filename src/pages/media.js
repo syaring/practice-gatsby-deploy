@@ -31,9 +31,6 @@ export default class MediaPage extends React.Component {
                       <span> &bull; </span>
                       <small>{post.frontmatter.date}</small>
                     </p>
-                    <p>
-                      {post.excerpt}
-                    </p>
                   </div>
                 </a>
               ))}
@@ -60,8 +57,8 @@ export const mediaPageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 300)
-          id
+          # excerpt(pruneLength: 300)
+          # id
           fields {
             slug
           }
