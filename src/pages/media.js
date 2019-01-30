@@ -56,7 +56,7 @@ export const mediaPageQuery = graphql`
   query MediaPageQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] },
-      filter: {frontmatter: { templateKey: { eq: "media-post" } }}
+      filter: { frontmatter: {mediaName: { glob: "*"}} },
     ) {
       edges {
         node {
@@ -67,7 +67,6 @@ export const mediaPageQuery = graphql`
           }
           frontmatter {
             title
-            templateKey
             link
             date(formatString: "YYYY-MM-DD")
           }

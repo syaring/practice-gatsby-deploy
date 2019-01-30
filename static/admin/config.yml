@@ -21,14 +21,12 @@ collections:
 
   - name: "media"
     label: "Media"
-    folder: "src/pages/media"
+    folder: "src/media"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "media-post"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Published Date", name: "date", widget: "datetime"}
-      - {label: "Preview", name: "preview", widget: string}
       - {label: "Media Name", name: "mediaName", widget: "text"}
       - {label: "Link", name: "link", widget: "string"}
 
