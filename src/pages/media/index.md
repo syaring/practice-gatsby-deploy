@@ -1,10 +1,13 @@
 ---
-templateKey: 'media-page'
-path: /media
-title: Solidware in Media
+templateKey: media-page
 mediaItems:
-  - mediaItem: test
-    title: test1
+  - link: 'http://naver.com'
+    mediaItem: test
     preview: test preview
-    link: http://naver.com
+    title: test1
+  - link: gkgkgk
+    mediaItem: gkgkgk
+    preview: gkgk
+    title: gkgkgk
 ---
+
