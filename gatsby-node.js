@@ -5,12 +5,10 @@ const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
+
   return graphql(`
     {
-      allMarkdownRemark(
-        limit: 1000,
-        filter: { frontmatter: {templateKey: { glob: "*"}} },
-      ) {
+      allMarkdownRemark(limit: 1000) {
         edges {
           node {
             id

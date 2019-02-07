@@ -18,19 +18,6 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
-
-  - name: "media"
-    label: "Media"
-    folder: "src/pages/media"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      #- {label: "Type", name: "type", widget: "hidden", default: "media"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Published Date", name: "date", widget: "datetime"}
-      - {label: "Media Name", name: "mediaName", widget: "text"}
-      - {label: "Link", name: "link", widget: "string"}
-
   - name: "pages"
     label: "Pages"
     files:
