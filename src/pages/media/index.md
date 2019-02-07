@@ -5,9 +5,9 @@ mediaItems:
     mediaItem: test
     preview: test preview
     title: test1
-  - link: gkgkgk
-    mediaItem: gkgkgk
-    preview: gkgk
-    title: gkgkgk
+  - link: 'http://sdfsdfv'
+    mediaItem: 테스트!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    preview: 가나가나
+    title: 솔리드웨어~~~
 ---
 
